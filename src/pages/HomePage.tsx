@@ -1,47 +1,47 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Heart, Users, Calendar, Award, ArrowRight, Star } from 'lucide-react'
+import { Heart, Users, Award, ArrowRight, Star } from 'lucide-react'
 
 const HomePage: React.FC = () => {
   const features = [
     {
-      icon: Users,
-      title: '志愿服务',
-      description: '参与各类志愿服务活动，传递爱心与温暖',
+      icon: Heart,
+      title: '护佑童心',
+      description: '关爱儿童成长，为住院患儿带去知识与欢乐',
       color: 'bg-volunteer-primary'
     },
     {
-      icon: Calendar,
-      title: '活动丰富',
-      description: '定期组织多样化志愿活动，丰富校园生活',
+      icon: Users,
+      title: '西湖益行',
+      description: '西湖畔的温暖守护，搭建理解与爱的桥梁',
       color: 'bg-volunteer-secondary'
     },
     {
       icon: Award,
-      title: '成长平台',
-      description: '在志愿服务中提升自我，收获成长与友谊',
+      title: '智能车志愿',
+      description: '专业服务大型赛事，展现自动化人风采',
       color: 'bg-volunteer-accent'
     }
   ]
 
   const activities = [
     {
-      title: '社区服务行',
-      description: '走进社区，为居民提供便民服务',
-      image: '/images/community-service.jpg',
-      participants: 120
-    },
-    {
-      title: '环保志愿行',
-      description: '保护环境，共建绿色校园',
-      image: '/images/environment.jpg',
-      participants: 80
-    },
-    {
-      title: '关爱留守儿童',
-      description: '用爱心温暖每一个孩子的心灵',
+      title: '护佑童心·儿童医院',
+      description: '为住院患儿设计趣味课程，每年开展超20次活动，服务儿童超百人',
       image: '/images/children-care.jpg',
-      participants: 60
+      participants: 5103
+    },
+    {
+      title: '西湖益行·温暖守护',
+      description: '96名志愿者7小时坚守，5公里湖畔行程搭建理解与爱的桥梁',
+      image: '/images/west-lake.jpg',
+      participants: 96
+    },
+    {
+      title: '智能车竞赛志愿服务',
+      description: '服务全国大学生智能汽车竞赛，累计志愿时长8000+小时',
+      image: '/images/smart-car.jpg',
+      participants: 500
     }
   ]
 
@@ -156,20 +156,20 @@ const HomePage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">500+</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">5103</div>
               <div className="text-white/80">注册志愿者</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">200+</div>
-              <div className="text-white/80">志愿活动</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">197</div>
+              <div className="text-white/80">年度活动</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">10000+</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">80024</div>
               <div className="text-white/80">服务时长</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold mb-2">50+</div>
-              <div className="text-white/80">合作机构</div>
+              <div className="text-3xl md:text-4xl font-bold mb-2">12+</div>
+              <div className="text-white/80">服务基地</div>
             </div>
           </div>
         </div>

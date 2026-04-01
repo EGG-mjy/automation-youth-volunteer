@@ -226,20 +226,20 @@ const GalleryPage: React.FC = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="text-center">
-              <div className="text-3xl font-bold text-volunteer-primary mb-2">200+</div>
-              <div className="text-gray-600">精彩照片</div>
+              <div className="text-3xl font-bold text-volunteer-primary mb-2">197</div>
+              <div className="text-gray-600">年度活动</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-volunteer-secondary mb-2">50+</div>
-              <div className="text-gray-600">活动记录</div>
+              <div className="text-3xl font-bold text-volunteer-secondary mb-2">61</div>
+              <div className="text-gray-600">公众号推文</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-volunteer-accent mb-2">1000+</div>
-              <div className="text-gray-600">点赞数量</div>
+              <div className="text-3xl font-bold text-volunteer-accent mb-2">10万+</div>
+              <div className="text-gray-600">传播量</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-volunteer-heart mb-2">365</div>
-              <div className="text-gray-600">天记录</div>
+              <div className="text-3xl font-bold text-volunteer-heart mb-2">22</div>
+              <div className="text-gray-600">年传承</div>
             </div>
           </div>
         </div>

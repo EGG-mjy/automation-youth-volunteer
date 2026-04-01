@@ -24,15 +24,15 @@ const Footer: React.FC = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
-                <span className="text-white/90">自动化学院团委</span>
+                <span className="text-white/90">杭州电子科技大学自动化学院</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span className="text-white/90">010-12345678</span>
+                <span className="text-white/90">联系指导老师：姜智敏、姜博恩</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span className="text-white/90">volunteer@auto.edu.cn</span>
+                <span className="text-white/90">关注公众号：杭电自动化青协</span>
               </div>
             </div>
           </div>

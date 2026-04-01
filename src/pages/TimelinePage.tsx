@@ -4,72 +4,72 @@ import { Calendar, Users, Award, Heart } from 'lucide-react'
 const TimelinePage: React.FC = () => {
   const milestones = [
     {
-      year: '2015',
+      year: '2003',
       title: '青协成立',
-      description: '自动化学院青年志愿者协会正式成立，首批会员30人',
+      description: '自动化学院青年志愿者协会正式成立，开启志愿服务新篇章',
       icon: Heart,
       color: 'bg-volunteer-primary'
     },
     {
-      year: '2016',
-      title: '首个品牌项目',
-      description: '启动"科技进校园"科普志愿服务项目，走进3所中小学',
+      year: '2005',
+      title: '慧灵基地建立',
+      description: '建立首个慧灵助残服务基地，12年发展完善成为品牌项目',
       icon: Award,
       color: 'bg-volunteer-secondary'
     },
     {
-      year: '2017',
-      title: '规模扩大',
-      description: '注册志愿者突破100人，年服务时长达到2000小时',
+      year: '2010',
+      title: '社区服务拓展',
+      description: '签约早城、下沙等社区基地，开展智慧助老服务',
       icon: Users,
       color: 'bg-volunteer-accent'
     },
     {
-      year: '2018',
-      title: '获得表彰',
-      description: '荣获校级"优秀志愿服务组织"称号',
-      icon: Award,
+      year: '2013',
+      title: '儿童医院合作',
+      description: '与浙江大学附属儿童医院建立合作，启动"护佑童心"项目',
+      icon: Heart,
       color: 'bg-volunteer-heart'
     },
     {
-      year: '2019',
-      title: '智慧助老',
-      description: '启动"智慧助老"项目，帮助社区老人学习智能设备',
-      icon: Heart,
-      color: 'bg-volunteer-primary'
-    },
-    {
-      year: '2020',
-      title: '线上服务',
-      description: '疫情期间创新开展线上志愿服务，服务形式多元化',
+      year: '2015',
+      title: '规模突破',
+      description: '注册志愿者突破1000人，年服务时长超过10000小时',
       icon: Users,
-      color: 'bg-volunteer-secondary'
+      color: 'bg-volunteer-primary'
     },
     {
       year: '2021',
-      title: '环保公益',
-      description: '开展"绿色校园"环保系列活动，倡导可持续发展理念',
-      icon: Award,
-      color: 'bg-volunteer-green'
-    },
-    {
-      year: '2022',
-      title: '突破500人',
-      description: '注册志愿者突破500人，年服务时长超过8000小时',
-      icon: Users,
-      color: 'bg-volunteer-primary'
-    },
-    {
-      year: '2023',
-      title: '市级荣誉',
-      description: '获得市级"优秀青年志愿服务组织"荣誉称号',
+      title: '慧灵基地获奖',
+      description: '慧灵基地被评为校级优秀志愿基地，"灵动翼行"项目获省赛铜奖',
       icon: Award,
       color: 'bg-volunteer-secondary'
     },
     {
       year: '2024',
-      title: '数字化转型',
-      description: '启动志愿服务数字化管理平台，提升服务效率',
+      title: '品牌项目成型',
+      description: '"护佑童心"、"西湖益行"、"智能车志愿"三大品牌项目确立',
+      icon: Heart,
+      color: 'bg-volunteer-accent'
+    },
+    {
+      year: '2025',
+      title: '二十二周年',
+      description: '青协成立二十二周年，注册志愿者达5103人，累计服务80024小时',
+      icon: Users,
+      color: 'bg-volunteer-primary'
+    },
+    {
+      year: '2025',
+      title: '西湖益行启动',
+      description: '举办首届"西湖益行"活动，96名志愿者服务西湖景区',
+      icon: Award,
+      color: 'bg-volunteer-secondary'
+    },
+    {
+      year: '2025',
+      title: '智能车服务',
+      description: '服务全国大学生智能汽车竞赛，近300名志愿者参与',
       icon: Heart,
       color: 'bg-volunteer-accent'
     }
