@@ -11,9 +11,9 @@ const TimelinePage: React.FC = () => {
       color: 'bg-volunteer-primary'
     },
     {
-      year: '2005',
-      title: '慧灵基地建立',
-      description: '建立首个慧灵助残服务基地，12年发展完善成为品牌项目',
+      year: '2014',
+      title: '"灵动翼行"启动',
+      description: '启动"灵动翼行"助残项目，与慧灵机构合作服务心智残障人士',
       icon: Award,
       color: 'bg-volunteer-secondary'
     },
@@ -25,9 +25,9 @@ const TimelinePage: React.FC = () => {
       color: 'bg-volunteer-accent'
     },
     {
-      year: '2013',
-      title: '儿童医院合作',
-      description: '与浙江大学附属儿童医院建立合作，启动"护佑童心"项目',
+      year: '2017',
+      title: '"护佑童心"启动',
+      description: '与浙江大学医学院附属儿童医院合作，启动"护佑童心"阳光病房项目',
       icon: Heart,
       color: 'bg-volunteer-heart'
     },

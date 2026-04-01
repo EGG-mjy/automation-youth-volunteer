@@ -8,16 +8,16 @@ const ActivitiesPage: React.FC = () => {
   const activities = [
     {
       id: 1,
-      title: '护佑童心·儿童医院志愿服务',
-      description: '为浙江大学附属儿童医院住院患儿设计趣味课程，每年开展超20次活动，服务儿童超百人',
+      title: '"护佑童心"阳光病房志愿服务',
+      description: '为浙江大学医学院附属儿童医院住院患儿设计趣味课程，7年发展，累计服务400余次',
       category: 'community',
       date: '2025-04-15',
-      location: '浙江大学附属儿童医院',
-      participants: 150,
+      location: '浙江大学医学院附属儿童医院',
+      participants: 6600,
       status: 'ongoing',
-      impact: '服务患儿200+人，获杭州日报、人民日报报道',
+      impact: '服务患儿20000+人次，志愿时长72000小时，获人民日报、杭州日报报道',
       image: '/images/children-care.jpg',
-      highlights: ['趣味课程', '能力提升', '媒体报道']
+      highlights: ['7年坚守', '400次服务', '权威媒体报道']
     },
     {
       id: 2,
@@ -34,29 +34,29 @@ const ActivitiesPage: React.FC = () => {
     },
     {
       id: 3,
-      title: '智能车竞赛志愿服务',
-      description: '服务全国大学生智能汽车竞赛省赛国赛，累计志愿时长8000+小时',
+      title: '智能汽车竞赛志愿服务',
+      description: '服务全国大学生智能汽车竞赛，省赛国赛双重保障，累计志愿时长8653小时',
       category: 'community',
       date: '2025-07-18',
       location: '杭州电子科技大学',
-      participants: 500,
+      participants: 520,
       status: 'completed',
-      impact: '保障赛事顺利进行，展现杭电学子风采',
+      impact: '省赛236人2848.85小时，国赛284人5804.3小时，获赛事组委会高度认可',
       image: '/images/smart-car.jpg',
-      highlights: ['专业服务', '大型赛事', '团队协作']
+      highlights: ['双重保障', '8653小时', '专业团队']
     },
     {
       id: 4,
-      title: '慧灵基地助残服务',
-      description: '在东湖、九堡等5个慧灵基地开展助残服务，12年发展完善，深受社会认可',
+      title: '"灵动翼行"慧灵助残服务',
+      description: '在5个慧灵基地开展助残服务，11年发展，累计服务535次，2800名志愿者参与',
       category: 'community',
       date: '2025-03-10',
-      location: '慧灵基地',
-      participants: 200,
+      location: '东湖、九堡等慧灵基地',
+      participants: 2800,
       status: 'ongoing',
-      impact: '获省志愿服务项目大赛铜奖，校级优秀基地',
+      impact: '服务残障人士5000+人次，志愿服务15525.8小时，获省赛铜奖',
       image: '/images/huiling.jpg',
-      highlights: ['助残服务', '12年传承', '省级荣誉']
+      highlights: ['11年传承', '535次服务', '省级荣誉']
     },
     {
       id: 5,
