@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
 import ActivitiesPage from './pages/ActivitiesPage'
+import ActivityDetailPage from './pages/ActivityDetailPage'
 import AboutPage from './pages/AboutPage'
 import TimelinePage from './pages/TimelinePage'
 import JoinPage from './pages/JoinPage'
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/activities" element={<ActivitiesPage />} />
+            <Route path="/activities/:slug" element={<ActivityDetailPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/timeline" element={<TimelinePage />} />
             <Route path="/join" element={<JoinPage />} />

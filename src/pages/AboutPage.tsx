@@ -1,213 +1,120 @@
 import React from 'react'
-import { Users, Target, Award, Heart, Lightbulb } from 'lucide-react'
+import { BookOpen, Building2, GraduationCap, Medal, Users2 } from 'lucide-react'
+import { associationMeta, departments, honors, teacherMoments } from '../content/siteContent'
 
 const AboutPage: React.FC = () => {
-  const values = [
-    {
-      icon: Heart,
-      title: '奉献精神',
-      description: '用爱心服务社会，用行动传递温暖'
-    },
-    {
-      icon: Users,
-      title: '团队合作',
-      description: '团结一心，携手并进，共同成长'
-    },
-    {
-      icon: Lightbulb,
-      title: '创新思维',
-      description: '运用专业知识，创新服务方式'
-    },
-    {
-      icon: Heart,
-      title: '社会责任',
-      description: '担当时代使命，贡献青春力量'
-    }
-  ]
-
-  const team = [
-    {
-      name: '姜智敏老师',
-      position: '协会指导老师',
-      description: '自动化学院老师，指导青协发展，提供专业支持'
-    },
-    {
-      name: '姜博恩老师',
-      position: '协会指导老师',
-      description: '自动化学院老师，协助青协日常管理，指导志愿活动'
-    },
-    {
-      name: '主席团成员',
-      position: '协会负责人',
-      description: '统筹协会各项工作，带领63名成员开展志愿服务'
-    },
-    {
-      name: '各部门部长',
-      position: '部门负责人',
-      description: '负责各部门日常工作，协调各项志愿活动开展'
-    }
-  ]
-
   return (
     <div className="min-h-screen">
-      {/* 页面头部 */}
-      <section className="warm-gradient text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <div className="text-center">
-            <Users className="h-12 w-12 mx-auto mb-4" />
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">关于我们</h1>
-            <p className="text-xl text-white/90 max-w-2xl mx-auto">
-              自动化学院青年志愿者协会，用青春书写奉献，用爱心点亮未来
-            </p>
-          </div>
+      <section className="page-hero">
+        <div className="page-hero-inner">
+          <BookOpen className="page-hero-icon" />
+          <p className="section-kicker text-volunteer-warm">关于我们</p>
+          <h1 className="page-hero-title">一所学院里的长期志愿品牌，二十三载持续生长</h1>
+          <p className="page-hero-copy">
+            {associationMeta.fullName} 自 2002 年成立以来，把“{associationMeta.mission}”写进一代代青协人的行动里。
+          </p>
         </div>
       </section>
 
-      {/* 青协简介 */}
       <section className="volunteer-section">
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">自动化青协简介</h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>
-                  自动化学院青年志愿者协会是一个充满活力、和谐友爱的青年志愿者组织。协会现有63名成员，
-                  由姜智敏、姜博恩老师担任指导老师，始终奉行"奉献、友爱、互助、进步"的准则，
-                  坚持以"服务同学，奉献社会"为宗旨。
-                </p>
-                <p>
-                  协会注册志愿者人数已达5103人，累计志愿服务时长超过80024.7小时。
-                  下设办公室、组织部、新媒体部、项目拓展中心、基地拓展中心、志愿者管理中心六个部门。
-                </p>
-                <p>
-                  2025年，自动化青协迎来了成立二十二周年的重要时刻。二十余年来，我们打造了"护佑童心"、
-                  "西湖益行"、"智能车志愿"三大品牌项目，用实际行动传递温暖与关爱。
-                </p>
+        <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+          <article className="volunteer-card p-8">
+            <div className="flex items-center gap-3">
+              <Users2 className="h-6 w-6 text-volunteer-primary" />
+              <h2 className="text-2xl font-bold text-slate-900">组织简介</h2>
+            </div>
+            <div className="mt-5 space-y-4 text-sm leading-8 text-slate-600">
+              <p>
+                自动化青协成立于 2002 年，是学院中持续运行至今的青年志愿服务组织。协会围绕助残关怀、病房陪伴、
+                赛事保障、乡村支教与校园公益展开长期服务，以真实合作关系和稳定项目机制支撑品牌建设。
+              </p>
+              <p>
+                二十三载走来，从最初的微光汇聚到如今的品牌矩阵，青协人把青春的力量融入每一次服务，把温暖的种子
+                播撒在每一个需要我们的角落。无论是在病房、社区、赛场、湖畔还是乡村课堂，志愿精神都以更具体的形式持续发生。
+              </p>
+              <p>
+                2025 年，协会围绕“灵动翼行”“护佑童心”“智能汽车竞赛志愿”“暑期支教”等核心品牌持续发力，并通过
+                西湖益行、东湖养老、海洋天堂、心灵驿站、百团招新等节点把年度叙事推向更完整的公众表达。
+              </p>
+            </div>
+          </article>
+
+          <aside className="volunteer-card p-8">
+            <div className="flex items-center gap-3">
+              <Building2 className="h-6 w-6 text-volunteer-primary" />
+              <h2 className="text-2xl font-bold text-slate-900">组织关键词</h2>
+            </div>
+            <div className="mt-6 grid gap-4">
+              <div className="rounded-2xl bg-volunteer-light/35 p-4">
+                <p className="text-sm font-semibold tracking-[0.16em] text-volunteer-primary">宗旨</p>
+                <p className="mt-2 text-lg font-bold text-slate-900">{associationMeta.mission}</p>
+              </div>
+              <div className="rounded-2xl bg-slate-50 p-4">
+                <p className="text-sm font-semibold tracking-[0.16em] text-volunteer-primary">年份口径</p>
+                <p className="mt-2 text-lg font-bold text-slate-900">2002 成立 · 2025 为第二十三载</p>
+              </div>
+              <div className="rounded-2xl bg-slate-50 p-4">
+                <p className="text-sm font-semibold tracking-[0.16em] text-volunteer-primary">品牌方向</p>
+                <p className="mt-2 text-sm leading-7 text-slate-700">助残、病房、赛事、支教、校园服务五条线并行，不靠单次活动撑起形象。</p>
               </div>
             </div>
-            <div className="volunteer-card p-8">
-              <div className="text-center">
-                <div className="warm-gradient w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Heart className="h-12 w-12 text-white" fill="currentColor" />
-                </div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">我们的使命</h3>
-                <p className="text-gray-600">
-                  用专业知识服务社会，用青春热情传递爱心，
-                  让每一位志愿者在奉献中成长，在服务中收获
-                </p>
-              </div>
-            </div>
-          </div>
+          </aside>
         </div>
       </section>
 
-      {/* 核心价值观 */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-slate-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">核心价值观</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              我们坚持的理念和价值观，指引着青协前进的方向
-            </p>
+          <div className="section-heading">
+            <p className="section-kicker">传承与荣誉</p>
+            <h2 className="section-title">长期主义带来的不是热闹，而是可被验证的成果</h2>
+            <p className="section-copy">荣誉只作为结果出现，真正重要的是它背后长期稳定的服务方法和组织能力。</p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {values.map((value, index) => {
-              const Icon = value.icon
-              return (
-                <div key={index} className="text-center">
-                  <div className="volunteer-card p-6 hover:animate-warm-glow">
-                    <div className="bg-volunteer-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Icon className="h-8 w-8 text-white" />
-                    </div>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">{value.title}</h3>
-                    <p className="text-gray-600 text-sm">{value.description}</p>
-                  </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            {honors.map((item) => (
+              <article key={item.label} className="volunteer-card p-6">
+                <div className="flex items-center gap-3">
+                  <Medal className="h-5 w-5 text-volunteer-secondary" />
+                  <h3 className="text-lg font-bold text-slate-900">{item.label}</h3>
                 </div>
-              )
-            })}
+                <p className="mt-4 text-2xl font-bold text-volunteer-primary">{item.value}</p>
+                <p className="mt-3 text-sm leading-7 text-slate-600">{item.detail}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* 组织架构 */}
       <section className="volunteer-section">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">组织架构</h2>
-            <p className="text-gray-600">协会由四个核心部门组成，各司其职，协同合作</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="volunteer-card p-6 text-center">
-              <div className="bg-volunteer-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Target className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">办公室</h3>
-              <p className="text-gray-600 text-sm">负责日常管理和协调工作</p>
-            </div>
-
-            <div className="volunteer-card p-6 text-center">
-              <div className="bg-volunteer-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">组织部</h3>
-              <p className="text-gray-600 text-sm">负责活动策划、组织和执行</p>
-            </div>
-
-            <div className="volunteer-card p-6 text-center">
-              <div className="bg-volunteer-accent w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">新媒体部</h3>
-              <p className="text-gray-600 text-sm">负责宣传推广和媒体运营</p>
-            </div>
-
-            <div className="volunteer-card p-6 text-center">
-              <div className="bg-volunteer-heart w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">项目拓展中心</h3>
-              <p className="text-gray-600 text-sm">负责项目开发和创新</p>
-            </div>
-
-            <div className="volunteer-card p-6 text-center">
-              <div className="bg-volunteer-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">基地拓展中心</h3>
-              <p className="text-gray-600 text-sm">负责志愿服务基地建设</p>
-            </div>
-
-            <div className="volunteer-card p-6 text-center">
-              <div className="bg-volunteer-secondary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">志愿者管理中心</h3>
-              <p className="text-gray-600 text-sm">负责志愿者管理和培训</p>
-            </div>
-          </div>
+        <div className="section-heading">
+          <p className="section-kicker">组织结构</p>
+          <h2 className="section-title">六个部门，共同支撑品牌项目的策划、传播与执行</h2>
+          <p className="section-copy">部门结构以 2025 年全体大会口径为准，加入页与这里保持完全一致。</p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {departments.map((department) => (
+            <article key={department.name} className="volunteer-card p-6">
+              <p className="text-sm font-semibold tracking-[0.18em] text-volunteer-primary/80">{department.focus}</p>
+              <h3 className="mt-3 text-2xl font-bold text-slate-900">{department.name}</h3>
+              <p className="mt-4 text-sm leading-7 text-slate-600">{department.description}</p>
+            </article>
+          ))}
         </div>
       </section>
 
-      {/* 团队介绍 */}
-      <section className="bg-gray-50 py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">核心团队</h2>
-            <p className="text-gray-600">优秀的团队是青协发展的核心动力</p>
+      <section className="bg-slate-900 py-16 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="section-heading !mb-10">
+            <p className="section-kicker text-volunteer-warm">指导老师年度节点</p>
+            <h2 className="section-title text-white">以 PDF 中出现的年度节点呈现老师信息，不人为拼成同一届名单</h2>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="volunteer-card p-6 text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-volunteer-primary to-volunteer-secondary rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="h-10 w-10 text-white" />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-800 mb-1">{member.name}</h3>
-                <p className="text-volunteer-primary font-medium mb-2">{member.position}</p>
-                <p className="text-gray-600 text-sm">{member.description}</p>
-              </div>
+          <div className="grid gap-6 md:grid-cols-3">
+            {teacherMoments.map((teacher) => (
+              <article key={teacher.label} className="rounded-[28px] border border-white/10 bg-white/5 p-6">
+                <GraduationCap className="h-6 w-6 text-volunteer-warm" />
+                <p className="mt-4 text-sm uppercase tracking-[0.18em] text-white/60">{teacher.label}</p>
+                <h3 className="mt-2 text-2xl font-bold">{teacher.value}</h3>
+                <p className="mt-3 text-sm leading-7 text-white/75">{teacher.detail}</p>
+              </article>
             ))}
           </div>
         </div>

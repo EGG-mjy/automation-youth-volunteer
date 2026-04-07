@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Heart, Menu, X, Users, Calendar, Clock, UserPlus, Image } from 'lucide-react'
+import { associationMeta } from '../content/siteContent'
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -8,17 +9,17 @@ const Navbar: React.FC = () => {
 
   const navItems = [
     { name: '首页', path: '/', icon: Heart },
-    { name: '志愿活动', path: '/activities', icon: Calendar },
+    { name: '品牌项目', path: '/activities', icon: Calendar },
     { name: '关于我们', path: '/about', icon: Users },
-    { name: '大事记', path: '/timeline', icon: Clock },
-    { name: '活动相册', path: '/gallery', icon: Image },
+    { name: '发展历程', path: '/timeline', icon: Clock },
+    { name: '活动纪实', path: '/gallery', icon: Image },
     { name: '加入我们', path: '/join', icon: UserPlus },
   ]
 
   const isActive = (path: string) => location.pathname === path
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-volunteer-primary">
+    <nav className="bg-white/90 shadow-sm sticky top-0 z-50 border-b border-volunteer-primary/15 backdrop-blur">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -26,9 +27,12 @@ const Navbar: React.FC = () => {
             <div className="heart-icon">
               <Heart className="h-8 w-8 text-volunteer-heart" fill="currentColor" />
             </div>
-            <span className="font-display text-xl font-bold text-gray-800">
-              自动化青协
-            </span>
+            <div>
+              <span className="block font-display text-xl font-bold text-gray-800">{associationMeta.shortName}</span>
+              <span className="hidden text-[11px] uppercase tracking-[0.22em] text-volunteer-primary/70 md:block">
+                {associationMeta.anniversaryLabel}
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

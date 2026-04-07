@@ -1,0 +1,606 @@
+export type AssociationMeta = {
+  shortName: string
+  fullName: string
+  establishedYear: number
+  currentYear: number
+  anniversaryLabel: string
+  heroTitle: string
+  heroSubtitle: string
+  mission: string
+  description: string
+}
+
+export type StatItem = {
+  label: string
+  value: string
+  detail: string
+}
+
+export type ProjectStory = {
+  slug: string
+  name: string
+  subtitle: string
+  category: string
+  startYear: number
+  summary: string
+  impact: string[]
+  highlights: string[]
+  subProjects?: Array<{
+    name: string
+    startYear?: number
+    summary: string
+  }>
+  sections?: Array<{
+    title: string
+    body: string
+  }>
+  sourceNote?: string
+  image?: string
+  caption?: string
+}
+
+export type TimelineEvent = {
+  year: string
+  title: string
+  description: string
+  badge?: string
+}
+
+export type DepartmentInfo = {
+  name: string
+  focus: string
+  description: string
+}
+
+export type AnnualMoment = {
+  title: string
+  context: string
+  description: string
+  tag: string
+}
+
+export type GalleryStory = {
+  title: string
+  summary: string
+  tags: string[]
+  caption: string
+  sourceNote?: string
+}
+
+export const associationMeta: AssociationMeta = {
+  shortName: '自动化青协',
+  fullName: '杭州电子科技大学自动化学院（人工智能学院）青年志愿者协会',
+  establishedYear: 2002,
+  currentYear: 2025,
+  anniversaryLabel: '第二十三载',
+  heroTitle: '二十三载自青路，砥砺赓续志愿情',
+  heroSubtitle: '从病房陪伴到湖畔倡导，从赛事保障到乡村支教，用青年行动把温暖写进校园与社会。',
+  mission: '服务同学，奉献社会',
+  description:
+    '自动化青协成立于 2002 年，围绕助残关怀、病房陪伴、赛事志愿、养老服务、乡村支教与校园公益，持续构建具有组织传承与品牌辨识度的志愿服务矩阵。'
+}
+
+export const homeStats: StatItem[] = [
+  {
+    label: '护佑童心',
+    value: '400+ 次',
+    detail: '6600+ 志愿者参与，72000 小时陪伴，服务患儿超 20000 人次'
+  },
+  {
+    label: '灵动翼行',
+    value: '535 次',
+    detail: '2800+ 志愿者投身，累计 15525.8 小时，直接受益超 5000 人次'
+  },
+  {
+    label: '智能车竞赛',
+    value: '8653.15 小时',
+    detail: '省赛 236 人、国赛 284 人，全流程保障双赛落地'
+  },
+  {
+    label: '2025 年度行动',
+    value: '百余场',
+    detail: '覆盖助残、病房、校园、养老、支教与大型赛事志愿服务'
+  }
+]
+
+export const signatureProjects: ProjectStory[] = [
+  {
+    slug: 'lingdongyixing',
+    name: '灵动翼行',
+    subtitle: '十一载步履不停，我们携爱共进',
+    category: '助残关怀',
+    startYear: 2014,
+    summary:
+      '由杭州慧灵机构与自动化青协共同发起，面向心智残障人士和精神康复者，围绕陪伴、兴趣培养、教育支持与社会融合开展长期服务。',
+    impact: ['2014-2025', '535 次服务', '2800+ 志愿者', '15525.8 小时', '5000+ 直接受益人次'],
+    highlights: ['2021 年获精品立项', '2021 年获校优秀志愿基地', '5 个慧灵合作基地', '形成学校、基地、青年三方受益结构']
+    ,
+    sections: [
+      {
+        title: '项目概况',
+        body:
+          '“灵动翼行”于 2014 年启动，由杭州慧灵机构和自动化青协共同发起，主要面向杭州大龄心智残障人士和精神康复者群体。项目围绕日常关怀、文体活动、兴趣培养与教育支持等内容展开，初心是陪伴服务对象共同成长，并支持他们更好融入社会。'
+      },
+      {
+        title: '长期服务方式',
+        body:
+          '十一年来，志愿者团队长期保持前往多个慧灵基地的稳定节奏。活动从生理健康、心理健康、知识普及三个方面展开，结合元旦、春节、中秋、重阳等节点，加入音乐鉴赏、绘画、手工、科技制作等趣味活动，在一对一交流中建立长期信任。'
+      },
+      {
+        title: '影响与延展',
+        body:
+          '项目逐步形成“学校与慧灵基地”“杭电学子与慧灵人士”两条主线结合的结构，并在 2021 年获得精品立项、校优秀志愿基地等认可。2025 年又进一步延展出“西湖益行”公众倡导活动，把对残障群体的理解从基地内部带到公共空间。'
+      }
+    ]
+  },
+  {
+    slug: 'huyoutongxin',
+    name: '护佑童心',
+    subtitle: '缘起微光，童心为岸',
+    category: '病房陪伴',
+    startYear: 2017,
+    summary:
+      '与浙江大学医学院附属儿童医院共同发起，围绕长期住院患儿开展阅读推广、科普讲座与艺术工作坊，让病房成为传递希望的成长空间。',
+    impact: ['2017-2025', '400+ 次服务', '6600+ 志愿者', '72000 小时', '20000+ 患儿受益'],
+    highlights: ['2025 青年志愿服务项目大赛优秀团队', '2023-2024 连续获评浙大儿院年度优秀志愿者团队', '儿童友好志愿服务团队', '人民日报健康客户端、杭州日报等报道']
+    ,
+    sections: [
+      {
+        title: '项目背景',
+        body:
+          '“护佑童心”于 2017 年正式启动，由浙江大学医学院附属儿童医院和自动化青协共同发起，主要面向长期住院患儿，聚焦病房中普遍存在的心理关怀不足、学习连续性断裂与社交支持不足等问题。'
+      },
+      {
+        title: '服务内容',
+        body:
+          '项目围绕阅读推广、科普讲座、艺术工作坊等形式持续展开。2025 年的活动特别聚焦节日庆典、传统文化、科学启蒙、科技融合和兴趣培养五个维度，包括冬至彩泥饺子、未来小车奇遇记、非遗剪纸、小小航天员、重阳敬老手作等。'
+      },
+      {
+        title: '项目成效',
+        body:
+          '据 1200 份有效调研数据显示，活动在转移患儿痛苦注意力、提升学习兴趣、促进交流意愿等方面都产生了清晰效果；同时近 80% 家长反馈孩子表达意愿增强、对出院生活更有期待。项目也因此获得多项医院与社会层面的认可。'
+      }
+    ]
+  },
+  {
+    slug: 'smart-car',
+    name: '智能汽车竞赛志愿',
+    subtitle: '以志愿微光，映赛场荣光',
+    category: '赛事保障',
+    startYear: 2025,
+    summary:
+      '自动化青协全程牵头统筹第二十届全国大学生智能汽车竞赛浙江赛区选拔赛与全国总决赛的志愿服务，完成从筹备到收尾的全链条保障。',
+    impact: ['省赛 236 人', '国赛 284 人', '2848.85 小时', '5804.3 小时', '200+ 志愿者专业团队'],
+    highlights: ['六大组别精细分工', '五天赛前筹备', '从 7:30 到 22:00 全天候值守', '获赛事组委会与参赛高校认可']
+    ,
+    sections: [
+      {
+        title: '赛事角色',
+        body:
+          '在 2025 年承办的第二十届全国大学生智能汽车竞赛中，自动化青协作为唯一牵头统筹单位，负责志愿服务全链条组织，从招募、培训到现场运行与收尾均由协会主导推进。'
+      },
+      {
+        title: '组织方式',
+        body:
+          '为适应大型赛事高标准需求，志愿者被划分为场内组、志愿者保障组、会务组、随队组、开闭幕式组和核心骨干组，并建立指导老师、骨干成员、岗位志愿者三级联动机制，通过标准化手册与模拟演练保证执行质量。'
+      },
+      {
+        title: '成果回顾',
+        body:
+          '省赛与国赛分别实现 236 人次、284 人次签到，总时长分别达到 2848.85 小时与 5804.3 小时。项目不仅保障了赛事高效运转，也让志愿者在高压场景中完成了组织能力和责任意识的双重成长。'
+      }
+    ]
+  },
+  {
+    slug: 'summer-teaching',
+    name: '暑期支教',
+    subtitle: '翰墨梦想翼，云衢筑梦行',
+    category: '乡村支教',
+    startYear: 2014,
+    summary:
+      '暑期支教由三个团队共同构成，分别是飞鸟夏令营、逐梦清溪、筑梦前陈，形成安徽祁门、台州大溪、金华浦江等多点长期支教实践。',
+    impact: ['筑梦前陈始于 2014', '飞鸟夏令营始于 2019', '逐梦清溪形成于 2019', '400+ 公里双向奔赴', '2.8 万 / 7.8 万级传播'],
+    highlights: ['三个团队并行推进', '高校与乡村教育的长期桥梁', '课堂、家访、调研三位一体', '多地主流媒体报道'],
+    subProjects: [
+      {
+        name: '飞鸟夏令营',
+        startYear: 2019,
+        summary: '与安徽省黄山市祁门县柏溪中心学校建立长期合作，以多元课堂和乡教传播连接高校力量与乡村教育。'
+      },
+      {
+        name: '逐梦清溪',
+        startYear: 2019,
+        summary: '以台州大溪镇儿童为主要服务对象，围绕留守儿童假期陪伴、学业辅导、文体活动与乡村文化调研展开。'
+      },
+      {
+        name: '筑梦前陈',
+        startYear: 2014,
+        summary: '扎根金华市浦江县黄宅镇前陈村，十一年持续开展暑期支教，是自动化学院长期实践基地的重要代表。'
+      }
+    ],
+    sections: [
+      {
+        title: '多点支教网络',
+        body:
+          '自动化青协的暑期支教不是单一项目，而是由飞鸟夏令营、逐梦清溪、筑梦前陈三个团队共同组成的多点实践网络。三支团队分别对应黄山祁门、台州大溪、金华浦江等服务地，覆盖乡村儿童陪伴、课程设计、家访调研与地方文化连接。'
+      },
+      {
+        title: '代表项目',
+        body:
+          '飞鸟夏令营自 2019 年起持续开展，与安徽省黄山市祁门县柏溪中心学校建立长期合作；逐梦清溪团队同样形成于 2019 年，围绕大溪镇儿童与留守儿童服务展开；筑梦前陈基地则自 2014 年起运行，连续十一年服务前陈村。'
+      },
+      {
+        title: '传播与价值',
+        body:
+          '这些支教活动不只服务课堂本身，也通过主流媒体、地方政府和新媒体矩阵形成社会回响。飞鸟夏令营的媒体报道达到 2.8 万浏览量，筑梦前陈相关报道达到 7.8 万浏览量，说明支教实践已经兼具教育价值与公共传播价值。'
+      }
+    ]
+  }
+]
+
+export const extendedStories: ProjectStory[] = [
+  {
+    slug: 'xihu-yixing',
+    name: '西湖益行',
+    subtitle: '把理解带到湖畔，把尊重带回日常',
+    category: '公众倡导',
+    startYear: 2025,
+    summary:
+      '作为灵动翼行的公众倡导延展，自动化青协于 2025 年 4 月 26 日在西湖举办公益徒步与互动体验，让更多游客理解慧灵学员与残障群体。',
+    impact: ['300+ 游客参与', '96 名志愿者', '7 小时坚守', '5 公里路线', '500+ 手册分发'],
+    highlights: ['六个互动摊位', '20+ 祝福视频', '50 把漆扇认领一空', '把偏见转化为具体的理解行动']
+  },
+  {
+    slug: 'donghu',
+    name: '东湖街道养老服务',
+    subtitle: '陪伴长者，让岁月更温柔',
+    category: '养老服务',
+    startYear: 2025,
+    summary:
+      '围绕东湖养老服务中心，开展重阳艾草锤、暖心桃酥与老年学校结业典礼等陪伴式活动，以手作、表演与交流传递敬老爱老的温度。',
+    impact: ['重阳手作', '桃酥烘焙', '结业典礼陪伴'],
+    highlights: ['敬老爱老主题鲜明', '志愿者一对一协助', '活动兼具节日与日常陪伴属性']
+  },
+  {
+    slug: 'ocean-heaven',
+    name: '海洋天堂',
+    subtitle: '心向暖阳，青志未央',
+    category: '年度专题',
+    startYear: 2025,
+    summary:
+      '面向东湖、九堡、临平、丁桥、闸弄口等残疾人之家开展全年主题活动，以音乐、手作、节庆陪伴与心愿表达串联起一整年的温暖故事。',
+    impact: ['5 个基地', '27 次活动', '覆盖双节、重阳、冬至与元旦'],
+    highlights: ['香囊、花样饺子、音乐节、祈福牌等活动', '突出陪伴、理解与包容', '保留独立年度专题视角']
+  }
+]
+
+export const annualMoments: AnnualMoment[] = [
+  {
+    title: '西湖益行',
+    context: '2025 年 4 月 26 日',
+    description: '以 5 公里公益徒步、互动体验与公众对话，向 300+ 游客讲述理解与包容的故事。',
+    tag: '湖畔理解行动'
+  },
+  {
+    title: '东湖养老',
+    context: '2025 年 10-12 月',
+    description: '从重阳艾草锤到桃酥烘焙，再到老年学校结业典礼，把陪伴落在长者的日常生活里。',
+    tag: '长者陪伴'
+  },
+  {
+    title: '海洋天堂',
+    context: '2025 全年',
+    description: '走进五个慧灵与残疾人之家基地，以节庆活动和音乐手作让陪伴持续发生。',
+    tag: '助残专题'
+  },
+  {
+    title: '心灵驿站',
+    context: '2024 年 5 月',
+    description: '通过心情石、沙子瓶 DIY 等治愈环节，引导同学表达情绪、建立校园关怀通道。',
+    tag: '校园公益'
+  },
+  {
+    title: '百团招新',
+    context: '2025 年 9 月 21 日',
+    description: '把品牌项目、部门成长路径与志愿精神带到校园广场，连接新一届青协成员。',
+    tag: '组织传承'
+  }
+]
+
+export const timelineEvents: TimelineEvent[] = [
+  {
+    year: '2002',
+    title: '自动化青协成立',
+    description: '协会确立“服务同学，奉献社会”的宗旨，开启校园志愿服务传承。',
+    badge: '起点'
+  },
+  {
+    year: '2014',
+    title: '灵动翼行与前陈支教基地起步',
+    description: '助残项目与前陈暑期实践基地同步生长，形成长期服务与长期实践的两条品牌线。',
+    badge: '双线生长'
+  },
+  {
+    year: '2017',
+    title: '护佑童心启动',
+    description: '与浙大儿院共同发起阳光病房志愿服务，将病房陪伴发展为协会核心品牌项目。',
+    badge: '病房品牌'
+  },
+  {
+    year: '2019',
+    title: '飞鸟夏令营与逐梦清溪形成',
+    description: '支教实践从单点陪伴扩展为多地联动，乡村课堂、家访与调研逐步成熟。',
+    badge: '乡村教育'
+  },
+  {
+    year: '2021',
+    title: '灵动翼行获精品立项、校优秀志愿基地',
+    description: '长期助残服务获得校内认可，品牌项目正式进入稳定影响力阶段。',
+    badge: '荣誉节点'
+  },
+  {
+    year: '2024',
+    title: '二教记忆书吧成立',
+    description: '校园公益空间延伸至阅读服务，书吧志愿活动成为新的日常服务场景。',
+    badge: '校园服务'
+  },
+  {
+    year: '2025',
+    title: '年度品牌矩阵成型',
+    description: '西湖益行举办、智能车省赛国赛双保障、第二十三届青代会、护佑童心年度主题活动、东湖养老与海洋天堂系列活动共同构成这一年的高光。',
+    badge: '第二十三载'
+  }
+]
+
+export const serviceMatrix: StatItem[] = [
+  {
+    label: '助残关怀',
+    value: '灵动翼行',
+    detail: '长期陪伴慧灵学员、残障人士与精神康复者，强调理解、兴趣培养与社会融合'
+  },
+  {
+    label: '病房陪伴',
+    value: '护佑童心',
+    detail: '把教育、科普与艺术工作坊带进病房，让患儿在治疗中保有成长感'
+  },
+  {
+    label: '赛事保障',
+    value: '智能车志愿',
+    detail: '用系统化组织与高密度执行保障大型科技赛事平稳运行'
+  },
+  {
+    label: '乡村支教',
+    value: '暑期实践',
+    detail: '飞鸟夏令营、筑梦前陈、逐梦清溪构成长期教育陪伴网络'
+  },
+  {
+    label: '校园服务',
+    value: '书吧与心灵驿站',
+    detail: '让公益发生在校园日常，连接阅读空间、情绪关怀与新生成长'
+  }
+]
+
+export const honors: StatItem[] = [
+  {
+    label: '护佑童心',
+    value: '优秀团队',
+    detail: '获优秀志愿者团队、儿童友好志愿服务团队、2025 青年志愿服务项目大赛优秀团队'
+  },
+  {
+    label: '浙大儿院合作',
+    value: '连续认可',
+    detail: '2023-2024 连续获评浙大儿院年度优秀志愿者团队'
+  },
+  {
+    label: '灵动翼行',
+    value: '精品立项',
+    detail: '2021 年获精品立项，并被评为校优秀志愿基地'
+  },
+  {
+    label: '传播影响',
+    value: '多平台报道',
+    detail: '人民日报健康客户端、杭州日报、杭州新闻、潮新闻及校院官方平台持续关注'
+  }
+]
+
+export const departments: DepartmentInfo[] = [
+  {
+    name: '办公室',
+    focus: '统筹协调',
+    description: '负责协会日常联络、会议组织、制度推进与内部协作，让组织运行更稳。'
+  },
+  {
+    name: '组织部',
+    focus: '活动组织',
+    description: '负责全体大会、暖青大会、迎新与内部活动流程设计，是组织节奏的核心执行者。'
+  },
+  {
+    name: '新媒体',
+    focus: '内容传播',
+    description: '负责推文、视频、海报和活动纪实，把每一次志愿行动转化为可传播的温度。'
+  },
+  {
+    name: '志愿者管理中心',
+    focus: '保障调度',
+    description: '负责报名、排班、培训与现场保障，让每场活动都有人、有序、可持续。'
+  },
+  {
+    name: '基地拓展中心',
+    focus: '基地联动',
+    description: '负责与社区、医院、慧灵基地等合作方建立长期联系，拓展服务落点。'
+  },
+  {
+    name: '项目拓展中心',
+    focus: '项目策划',
+    description: '围绕品牌项目与新公益议题策划执行方案，把创意变成真正发生的服务。'
+  }
+]
+
+export const teacherMoments: StatItem[] = [
+  {
+    label: '2025 青代会',
+    value: '叶符公葳',
+    detail: '在换届节点回顾过去、指出问题并对未来提出展望'
+  },
+  {
+    label: '2025 迎新见面会',
+    value: '张艺珂',
+    detail: '鼓励新成员在青协这个温暖集体中坚守志愿精神'
+  },
+  {
+    label: '2025 十二月全体大会',
+    value: '姜智敏、姜博恩',
+    detail: '以最新年度会议口径呈现当前指导老师信息'
+  }
+]
+
+export const activityColumns: ProjectStory[] = [
+  signatureProjects[1],
+  {
+    ...signatureProjects[0],
+    slug: 'lingdongyixing',
+    name: '灵动翼行 / 西湖益行',
+    subtitle: '从基地陪伴到公众倡导',
+    impact: ['535 次服务', '2800+ 志愿者', '15525.8 小时', '西湖 300+ 游客参与', '96 名志愿者 7 小时行动'],
+    sections: [
+      {
+        title: '基地服务主线',
+        body:
+          '“灵动翼行”是自动化青协的长期助残品牌，长期与多个慧灵基地合作，通过陪伴、课程、兴趣培养和节庆活动支持心智残障人士与精神康复者。'
+      },
+      {
+        title: '公众倡导延展',
+        body:
+          '2025 年，协会在此基础上发起“西湖益行”，以徒步、展览、互动摊位和故事传播等方式，把理解与包容带到公共空间，形成从基地陪伴到公众沟通的延展叙事。'
+      },
+      {
+        title: '年度亮点',
+        body:
+          '西湖益行当天共有 96 名志愿者、300+ 游客参与，5 公里路线串联六个互动摊位，分发 500+ 手册，并留下 20+ 条视频祝福与 50 把漆扇互动成果。'
+      }
+    ]
+  },
+  signatureProjects[2],
+  extendedStories[1],
+  extendedStories[2],
+  signatureProjects[3]
+]
+
+export const activityDetailMap: Record<string, ProjectStory> = Object.fromEntries(
+  activityColumns.map((project) => [project.slug, project])
+)
+
+export const activitySlices: AnnualMoment[] = [
+  {
+    title: '冬至包饺子',
+    context: '护佑童心 · 2025 年 12 月 19 日',
+    description: '用五彩软泥替代真实食材，让病房里的孩子在安全体验中感受冬至传统与陪伴。',
+    tag: '病房节气活动'
+  },
+  {
+    title: '小小航天员',
+    context: '护佑童心 · 2025 年 4 月 16 日',
+    description: '通过绘本、动画短片与火箭手工制作，把航天启蒙带进阳光病房。',
+    tag: '病房科普'
+  },
+  {
+    title: '重阳艾草锤',
+    context: '东湖街道 · 2025 年 10 月 22 日',
+    description: '在穿针引线与节气手作中，把敬老爱老的传统情感落到真实陪伴。',
+    tag: '养老服务'
+  },
+  {
+    title: '西湖 5 公里公益倡导',
+    context: '西湖益行 · 2025 年 4 月 26 日',
+    description: '六个互动摊位串起理解教育、义卖、视频祝福与公益体验，让湖畔成为公众课堂。',
+    tag: '公众倡导'
+  },
+  {
+    title: '九堡冬至花样饺子',
+    context: '海洋天堂 · 冬至专题',
+    description: '在九堡慧灵基地以 PPT 科普与橡皮泥手作传递冬至文化与基地陪伴。',
+    tag: '助残陪伴'
+  },
+  {
+    title: '百团招新',
+    context: '校园招新 · 2025 年 9 月 21 日',
+    description: '把青协六大部门、品牌项目与成长路径带到东操场 106 号摊位前。',
+    tag: '组织传播'
+  }
+]
+
+export const galleryStories: GalleryStory[] = [
+  {
+    title: '病房里的希望',
+    summary:
+      '从冬至彩泥饺子到智能车模型体验，再到航天启蒙和非遗剪纸，护佑童心用温柔的课程设计把希望留在病房。',
+    tags: ['护佑童心', '病房陪伴', '科普互动'],
+    caption: '“让病房成为传递希望的成长空间。”'
+  },
+  {
+    title: '湖畔理解行动',
+    summary:
+      '西湖益行把手册、便签、义卖、视频祝福与漆扇体验串成一条理解之路，让路过的人真正看见差异背后的人。',
+    tags: ['西湖益行', '公众倡导', '理解与尊重'],
+    caption: '“爱是唯一不需要翻译的语言。”'
+  },
+  {
+    title: '赛事服务现场',
+    summary:
+      '从赛前五天筹备到赛中全天值守，再到赛后场地复原，智能车竞赛志愿把精细分工变成了一套高标准协作机制。',
+    tags: ['智能车竞赛', '赛事保障', '200+ 志愿者'],
+    caption: '“用志愿微光点亮科技赛场。”'
+  },
+  {
+    title: '乡村课堂与家访',
+    summary:
+      '飞鸟夏令营、筑梦前陈与逐梦清溪把课堂、调研、家访与地方文化结合，形成长期支教的纪实画面。',
+    tags: ['暑期支教', '乡村教育', '双向奔赴'],
+    caption: '“愿以知识为翼，托举孩子们飞向更辽阔的前程。”'
+  },
+  {
+    title: '长者陪伴时刻',
+    summary:
+      '东湖街道养老服务与海洋天堂年度专题，以桃酥、香囊、音乐会和结业典礼记录“陪伴”作为一种日常关系的建立。',
+    tags: ['东湖街道', '海洋天堂', '陪伴式服务'],
+    caption: '“用陪伴传递敬意，用手作承载关怀。”'
+  }
+]
+
+export const joinReasons: StatItem[] = [
+  {
+    label: '真实项目里成长',
+    value: '长期品牌线',
+    detail: '从病房陪伴到赛事保障，参与的是已经持续多年的成熟项目，而不是一次性活动。'
+  },
+  {
+    label: '在团队协作中进步',
+    value: '六大部门',
+    detail: '每个部门都有明确职责与实践场景，适合在策划、传播、执行与统筹中积累能力。'
+  },
+  {
+    label: '把热爱变成行动',
+    value: '五类服务方向',
+    detail: '助残、病房、赛事、养老、支教与校园公益，为不同兴趣的成员提供稳定入口。'
+  }
+]
+
+export const serviceInterests = ['助残关怀', '病房陪伴', '赛事志愿', '养老服务', '支教实践', '校园公益传播']
+
+export const contactWays: StatItem[] = [
+  {
+    label: '公众号',
+    value: '杭电自动化青协',
+    detail: '关注协会官方内容，获取项目纪实、招新通知与年度活动更新。'
+  },
+  {
+    label: '线下招新',
+    value: '百团大战 / 宣讲会',
+    detail: '每年通过百团大战、迎新见面会等线下场景与新成员建立联系。'
+  },
+  {
+    label: '答疑方式',
+    value: 'QQ 答疑群',
+    detail: '页面保留真实渠道类型说明，不虚构具体群号与个人联系方式。'
+  }
+]

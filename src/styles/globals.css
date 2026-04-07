@@ -2,25 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700;800&family=ZCOOL+XiaoWei&display=swap');
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply font-warm bg-gradient-to-br from-volunteer-light/20 to-volunteer-warm/20;
+    @apply font-warm bg-[#fffaf3] text-slate-800;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-display text-gray-800;
   }
+
+  a {
+    @apply transition-colors;
+  }
 }
 
 @layer components {
   .volunteer-card {
-    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-volunteer-primary/10;
+    @apply bg-white rounded-[28px] shadow-[0_18px_40px_rgba(15,23,42,0.06)] transition-all duration-300 border border-volunteer-primary/10 hover:-translate-y-1 hover:shadow-[0_24px_52px_rgba(15,23,42,0.1)];
   }
 
   .warm-button {
-    @apply bg-gradient-to-r from-volunteer-primary to-volunteer-secondary text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-200;
+    @apply bg-gradient-to-r from-volunteer-primary to-volunteer-secondary text-white font-semibold py-3 px-6 rounded-full hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200;
   }
 
   .heart-icon {
@@ -33,5 +41,67 @@
 
   .warm-gradient {
     @apply bg-gradient-to-r from-volunteer-primary via-volunteer-secondary to-volunteer-warm;
+  }
+
+  .page-hero {
+    @apply bg-slate-900 text-white;
+    background-image:
+      radial-gradient(circle at top left, rgba(255, 230, 109, 0.18), transparent 24%),
+      radial-gradient(circle at bottom right, rgba(78, 205, 196, 0.18), transparent 26%),
+      linear-gradient(135deg, #0f172a 0%, #111827 52%, #1f2937 100%);
+  }
+
+  .page-hero-inner {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 text-center;
+  }
+
+  .page-hero-icon {
+    @apply h-12 w-12 mx-auto mb-4 text-volunteer-warm;
+  }
+
+  .page-hero-title {
+    @apply text-4xl md:text-5xl font-bold leading-tight text-white;
+  }
+
+  .page-hero-copy {
+    @apply mt-4 max-w-3xl mx-auto text-base md:text-lg leading-8 text-white/80;
+  }
+
+  .section-heading {
+    @apply text-center mb-12;
+  }
+
+  .section-kicker {
+    @apply text-sm font-semibold uppercase tracking-[0.22em] text-volunteer-primary/80;
+  }
+
+  .section-title {
+    @apply mt-2 text-3xl md:text-4xl font-bold text-slate-900;
+  }
+
+  .section-copy {
+    @apply mt-4 max-w-3xl mx-auto text-sm md:text-base leading-8 text-slate-600;
+  }
+
+  .card-texture {
+    background-image:
+      linear-gradient(135deg, rgba(255, 107, 53, 0.06), transparent 36%),
+      radial-gradient(circle at top right, rgba(255, 230, 109, 0.16), transparent 22%);
+  }
+
+  .form-input {
+    @apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-volunteer-primary focus:ring-4 focus:ring-volunteer-primary/10;
+  }
+
+  .form-label {
+    @apply mb-3 block text-sm font-semibold text-slate-700;
+  }
+
+  .choice-chip {
+    @apply flex items-center gap-3 rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 transition hover:border-volunteer-primary/30 hover:bg-white;
+  }
+
+  .choice-chip input {
+    @apply h-4 w-4 rounded border-slate-300 text-volunteer-primary focus:ring-volunteer-primary;
   }
 }
