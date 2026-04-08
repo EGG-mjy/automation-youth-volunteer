@@ -4,6 +4,8 @@ import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
 import ActivitiesPage from './pages/ActivitiesPage'
 import ActivityDetailPage from './pages/ActivityDetailPage'
+import TeachingBaseDetailPage from './pages/TeachingBaseDetailPage'
+import InternalEventsPage from './pages/InternalEventsPage'
 import AboutPage from './pages/AboutPage'
 import TimelinePage from './pages/TimelinePage'
 import JoinPage from './pages/JoinPage'
@@ -19,7 +21,9 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/activities" element={<ActivitiesPage />} />
+            <Route path="/activities/summer-teaching/base/:baseSlug" element={<TeachingBaseDetailPage />} />
             <Route path="/activities/:slug" element={<ActivityDetailPage />} />
+            <Route path="/internal-events" element={<InternalEventsPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/timeline" element={<TimelinePage />} />
             <Route path="/join" element={<JoinPage />} />

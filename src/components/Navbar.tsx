@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Heart, Menu, X, Users, Calendar, Clock, UserPlus, Image } from 'lucide-react'
+import { Heart, Menu, X, Users, Calendar, Clock, UserPlus, Image, ClipboardList } from 'lucide-react'
 import { associationMeta } from '../content/siteContent'
 
 const Navbar: React.FC = () => {
@@ -8,12 +8,13 @@ const Navbar: React.FC = () => {
   const location = useLocation()
 
   const navItems = [
-    { name: '首页', path: '/', icon: Heart },
-    { name: '品牌项目', path: '/activities', icon: Calendar },
-    { name: '关于我们', path: '/about', icon: Users },
-    { name: '发展历程', path: '/timeline', icon: Clock },
-    { name: '活动纪实', path: '/gallery', icon: Image },
-    { name: '加入我们', path: '/join', icon: UserPlus },
+    { name: '棣栭〉', path: '/', icon: Heart },
+    { name: '鍝佺墝椤圭洰', path: '/activities', icon: Calendar },
+    { name: '鍏充簬鎴戜滑', path: '/about', icon: Users },
+    { name: '鍙戝睍鍘嗙▼', path: '/timeline', icon: Clock },
+    { name: '娲诲姩绾疄', path: '/gallery', icon: Image },
+    { name: '内部活动', path: '/internal-events', icon: ClipboardList },
+    { name: '鍔犲叆鎴戜滑', path: '/join', icon: UserPlus },
   ]
 
   const isActive = (path: string) => location.pathname === path
