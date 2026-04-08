@@ -1,4 +1,4 @@
-﻿import React from 'react'
+import React from 'react'
 import { BookOpen, Building2, ExternalLink, GraduationCap, Medal, Users2 } from 'lucide-react'
 import { associationFacts, associationMeta, departments, honors, majorDeeds, teacherMoments } from '../content/siteContent'
 
@@ -141,7 +141,7 @@ const departmentDuties: DepartmentDuty[] = [
   },
   {
     name: '项目拓展中心',
-    summary: '负责重点品牌项目运营与新项目拓展，是协会项目创新与资源筹措的重要力量。',
+    summary: '负责重点项目运营与新项目拓展，也承担活动资源对接和筹备工作。',
     duties: [
       '“海洋天堂”志愿活动：在五个慧灵基地开展关爱陪伴与视野拓展',
       '“慧灵进校园”大型活动：带慧灵人士进校园，增强社会参与感',
@@ -175,7 +175,7 @@ const departmentDuties: DepartmentDuty[] = [
   },
   {
     name: '新媒体部',
-    summary: '负责影像记录、传播运营与内容生产，构建协会对外传播矩阵。',
+    summary: '负责拍摄记录、公众号运营和内容制作，让活动被更多人看见。',
     duties: [
       '活动照片与视频拍摄，完整记录活动过程',
       '运营协会公众号，制作微信推送，传播协会项目与动态',
@@ -193,7 +193,7 @@ const AboutPage: React.FC = () => {
         <div className="page-hero-inner">
           <BookOpen className="page-hero-icon" />
           <p className="section-kicker text-volunteer-warm">关于我们</p>
-          <h1 className="page-hero-title">一所学院里的长期志愿品牌，二十三载持续生长</h1>
+          <h1 className="page-hero-title">二十三年，自动化青协一直在做同一件事</h1>
           <p className="page-hero-copy">
             {associationMeta.fullName} 自 2002 年成立以来，把“{associationMeta.mission}”写进一代代青协人的行动里。
           </p>
@@ -218,7 +218,7 @@ const AboutPage: React.FC = () => {
               </p>
               <p>
                 二十三载走来，青协人在一次次基地服务、赛会保障、支教实践和校园公益中锻炼自我、成长进步，也把志愿服务沉淀成学院里
-                最稳定、最可辨识的长期品牌之一。
+                大家熟悉、也最信任的长期志愿团队之一。
               </p>
             </div>
           </article>
@@ -234,12 +234,12 @@ const AboutPage: React.FC = () => {
                 <p className="mt-2 text-lg font-bold text-slate-900">{associationMeta.mission}</p>
               </div>
               <div className="rounded-2xl bg-slate-50 p-4">
-                <p className="text-sm font-semibold tracking-[0.16em] text-volunteer-primary">年份口径</p>
+                <p className="text-sm font-semibold tracking-[0.16em] text-volunteer-primary">成立时间</p>
                 <p className="mt-2 text-lg font-bold text-slate-900">2002 成立 · 2025 为第二十三载</p>
               </div>
               <div className="rounded-2xl bg-slate-50 p-4">
-                <p className="text-sm font-semibold tracking-[0.16em] text-volunteer-primary">品牌方向</p>
-                <p className="mt-2 text-sm leading-7 text-slate-700">助残、病房、赛事、支教、校园服务五条线并行，不靠单次活动撑起形象。</p>
+                <p className="text-sm font-semibold tracking-[0.16em] text-volunteer-primary">服务方向</p>
+                <p className="mt-2 text-sm leading-7 text-slate-700">助残、病房、赛事、支教、校园服务五条线并行，长期稳定推进。</p>
               </div>
             </div>
           </aside>
@@ -250,8 +250,8 @@ const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="section-heading">
             <p className="section-kicker">主要事迹</p>
-            <h2 className="section-title">把二十余年的长期服务，拆成可以被理解的事实结构</h2>
-            <p className="section-copy">这里不再只讲抽象精神，而是把组织规模、主要项目和年度成果落到可核对的事实上。</p>
+            <h2 className="section-title">二十多年的服务，我们用清楚的数据和项目来展示</h2>
+            <p className="section-copy">这里主要看组织规模、重点项目和年度成果，信息都能对上。</p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {associationFacts.map((fact) => (
@@ -269,8 +269,8 @@ const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="section-heading">
             <p className="section-kicker">传承与荣誉</p>
-            <h2 className="section-title">长期主义带来的不是热闹，而是可被验证的成果</h2>
-            <p className="section-copy">荣誉只作为结果出现，真正重要的是它背后长期稳定的服务方法和组织能力。</p>
+            <h2 className="section-title">这些荣誉，来自一场场踏实做下来的服务</h2>
+            <p className="section-copy">奖项是结果，更重要的是背后长期稳定的行动和团队配合。</p>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             {honors.map((item) => (
@@ -326,7 +326,7 @@ const AboutPage: React.FC = () => {
         <div className="section-heading">
           <p className="section-kicker">年度重点面向</p>
           <h2 className="section-title">常规活动、支教、赛会与传播，共同构成 2025 年的完整面貌</h2>
-          <p className="section-copy">你给出的“主要事迹”并不只是长文材料，更适合拆成几个稳定板块来展示组织能力的广度。</p>
+          <p className="section-copy">这一部分把 2025 年重点内容分块展示，读起来更直观。</p>
         </div>
         <div className="grid gap-6 lg:grid-cols-2">
           {majorDeeds.map((deed) => (
@@ -349,8 +349,8 @@ const AboutPage: React.FC = () => {
       <section className="volunteer-section">
         <div className="section-heading">
           <p className="section-kicker">组织结构</p>
-          <h2 className="section-title">六个部门，共同支撑品牌项目的策划、传播与执行</h2>
-          <p className="section-copy">部门结构以 2025 年全体大会口径为准，加入页与这里保持完全一致。</p>
+          <h2 className="section-title">六个部门一起配合，保障活动从策划到落地</h2>
+          <p className="section-copy">部门信息以 2025 年全体大会内容为准，和加入页保持一致。</p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {departments.map((department) => (
@@ -367,8 +367,8 @@ const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="section-heading">
             <p className="section-kicker">各部门职能介绍</p>
-            <h2 className="section-title">主席团统筹方向，各中心与部门协同推进日常与品牌项目</h2>
-            <p className="section-copy">以下为自动化青协组织机构与职能的详细说明，按部门职责拆分展示。</p>
+            <h2 className="section-title">主席团统筹方向，各部门分工协作推进日常工作</h2>
+            <p className="section-copy">下面按部门列出具体职责，方便直接查看。</p>
           </div>
           <div className="grid gap-6 lg:grid-cols-2">
             {departmentDuties.map((department) => (
@@ -393,7 +393,7 @@ const AboutPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="section-heading !mb-10">
             <p className="section-kicker text-volunteer-warm">指导老师年度节点</p>
-            <h2 className="section-title text-white">以 PDF 中出现的年度节点呈现老师信息，不人为拼成同一届名单</h2>
+            <h2 className="section-title text-white">以现有年度节点呈现老师信息，不人为拼成同一届名单</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
             {teacherMoments.map((teacher) => (

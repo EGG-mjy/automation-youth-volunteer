@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { CheckCircle, ClipboardList, Compass, Megaphone, Send, UserPlus } from 'lucide-react'
 import { contactWays, departments, joinReasons, serviceInterests } from '../content/siteContent'
 
@@ -41,7 +41,7 @@ const JoinPage: React.FC = () => {
           <CheckCircle className="h-16 w-16 text-green-500 mx-auto" />
           <h1 className="mt-5 text-3xl font-bold text-slate-900">报名信息已记录</h1>
           <p className="mt-4 text-sm leading-7 text-slate-600">
-            页面当前仅保留非虚构的报名场景说明。后续可将表单接入真实招新流程、问卷或社群链接。
+            现在先做报名意向展示。后面可以直接接入你们真实的招新表单、问卷或群链接。
           </p>
           <button onClick={() => setSubmitted(false)} className="warm-button mt-6">
             继续查看页面
@@ -57,9 +57,9 @@ const JoinPage: React.FC = () => {
         <div className="page-hero-inner">
           <UserPlus className="page-hero-icon" />
           <p className="section-kicker text-volunteer-warm">加入我们</p>
-          <h1 className="page-hero-title">在品牌项目中成长，而不是只在报名表里留下名字</h1>
+          <h1 className="page-hero-title">来青协，一起做点实事</h1>
           <p className="page-hero-copy">
-            自动化青协欢迎愿意把热爱转化为行动的同学。加入后，你将进入真实项目、真实部门和真实协作关系中成长。
+            如果你愿意把热爱变成行动，欢迎加入。你会在项目里和大家一起做事、一起成长。
           </p>
         </div>
       </section>
@@ -89,7 +89,7 @@ const JoinPage: React.FC = () => {
               <p className="section-kicker">六大部门</p>
               <h2 className="section-title">每个部门都有真实工作场景</h2>
               <p className="section-copy">
-                职责口径与关于页保持一致，同时吸收 PDF 招新页对项目拓展、新媒体、志愿者管理与组织工作的描述。
+                部门职责和关于页保持一致，方便你对照了解每个部门平时都在做什么。
               </p>
             </div>
             <div className="grid gap-4">
@@ -184,7 +184,7 @@ const JoinPage: React.FC = () => {
       <section className="volunteer-section">
         <div className="section-heading">
           <p className="section-kicker">联系入口</p>
-          <h2 className="section-title">只保留真实渠道类型，不虚构具体号码</h2>
+          <h2 className="section-title">常用联系方式</h2>
         </div>
         <div className="grid gap-6 md:grid-cols-3">
           {contactWays.map((item) => (

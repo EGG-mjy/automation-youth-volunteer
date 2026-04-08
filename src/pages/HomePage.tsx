@@ -62,9 +62,9 @@ const HomePage: React.FC = () => {
       <section className="volunteer-section">
         <div className="section-heading">
           <p className="section-kicker">品牌项目</p>
-          <h2 className="section-title">四条长期品牌线，构成自动化青协的服务骨架</h2>
+          <h2 className="section-title">四条长期项目线，撑起自动化青协的日常服务</h2>
           <p className="section-copy">
-            这些项目不是零散活动，而是由真实合作机构、长期服务对象与稳定方法论支撑起来的持续行动。
+            这些项目不是临时拼出来的活动，而是和合作单位长期一起做下来的固定服务。
           </p>
         </div>
 
@@ -119,7 +119,7 @@ const HomePage: React.FC = () => {
             </div>
           </div>
           <div className="rounded-[28px] border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
-            <h3 className="text-xl font-bold">2025 年重点行动横向叙事带</h3>
+            <h3 className="text-xl font-bold">2025 年重点行动一览</h3>
             <div className="mt-6 space-y-4">
               {annualMoments.map((moment) => (
                 <div key={moment.title} className="border-l-2 border-volunteer-warm/60 pl-4">
@@ -139,7 +139,7 @@ const HomePage: React.FC = () => {
       <section className="volunteer-section">
         <div className="section-heading">
           <p className="section-kicker">组织定位</p>
-          <h2 className="section-title">把青年行动组织成可传承、可叙事、可持续的品牌官网</h2>
+          <h2 className="section-title">把每一份志愿行动认真记录下来</h2>
           <p className="section-copy">{associationMeta.description}</p>
         </div>
 
@@ -147,17 +147,17 @@ const HomePage: React.FC = () => {
             <div className="volunteer-card p-6">
               <h3 className="text-xl font-bold text-slate-900">传承时间</h3>
               <p className="mt-3 text-4xl font-bold text-volunteer-primary">{associationMeta.anniversaryLabel}</p>
-              <p className="mt-3 text-sm leading-7 text-slate-600">从 2002 年到 2025 年，组织叙事以真实年份和真实节点建立可信度。</p>
+              <p className="mt-3 text-sm leading-7 text-slate-600">从 2002 到 2025，青协一直在同一条路上做志愿服务。</p>
             </div>
             <div className="volunteer-card p-6">
-              <h3 className="text-xl font-bold text-slate-900">服务矩阵</h3>
+              <h3 className="text-xl font-bold text-slate-900">服务版图</h3>
               <p className="mt-3 text-4xl font-bold text-volunteer-primary">多场景长期服务</p>
               <p className="mt-3 text-sm leading-7 text-slate-600">社区、慧灵、病房、乡村、书吧、赛会与校园公共空间共同构成年度行动地图。</p>
             </div>
             <div className="volunteer-card p-6">
               <h3 className="text-xl font-bold text-slate-900">组织入口</h3>
               <p className="mt-3 text-4xl font-bold text-volunteer-primary">6 个部门</p>
-              <p className="mt-3 text-sm leading-7 text-slate-600">63 名成员在策划、传播、调度与基地联动中协同推进，让成员在真实项目里完成成长。</p>
+              <p className="mt-3 text-sm leading-7 text-slate-600">63 名成员一起分工协作，把活动策划、执行和复盘一步步做扎实。</p>
             </div>
           </div>
       </section>

@@ -11,16 +11,16 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Heart className="h-6 w-6" />
-              <h3 className="text-xl font-bold">{associationMeta.shortName}</h3>
+              <h3 className="text-xl font-bold text-white drop-shadow-sm">{associationMeta.shortName}</h3>
             </div>
             <p className="text-sm leading-7 text-white/80">{associationMeta.fullName}</p>
             <p className="text-sm leading-relaxed text-white/70">
-              以“{associationMeta.mission}”为宗旨，从 2002 到 2025 持续开展志愿服务，沉淀长期品牌项目与组织能力。
+              以“{associationMeta.mission}”为宗旨，从 2002 到 2025 一直在做志愿服务，也一步步积累了稳定的项目经验。
             </p>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">组织信息</h3>
+            <h3 className="text-xl font-bold text-white drop-shadow-sm">组织信息</h3>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4" />
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">快速入口</h3>
+            <h3 className="text-xl font-bold text-white drop-shadow-sm">快速入口</h3>
             <div className="space-y-2">
               <Link to="/activities" className="block text-white/90 transition-colors hover:text-white">
                 护佑童心
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">公众号二维码</h3>
+            <h3 className="text-xl font-bold text-white drop-shadow-sm">公众号二维码</h3>
             <div className="inline-block rounded-2xl bg-white p-2 shadow-[0_12px_30px_rgba(0,0,0,0.35)]">
               <img
                 src="/media/qrcode/automation-association-wechat-qr.png"

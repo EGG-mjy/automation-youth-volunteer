@@ -5,7 +5,7 @@ import { galleryStories, teachingBaseProfiles, teachingMediaWall } from '../cont
 const teachingAlbums = [
   {
     title: '飞鸟夏令营',
-    description: '已接入真实支教照片和视频，展示夏令营启程、课堂互动与陪伴现场。',
+    description: '这里能看到飞鸟夏令营的现场照片和视频，包括课堂互动和陪伴瞬间。',
     photos: [
       { src: '/media/teaching/photos/feiniao-1.jpg', alt: '飞鸟夏令营活动照片 1' },
       { src: '/media/teaching/photos/feiniao-2.jpg', alt: '飞鸟夏令营活动照片 2' },
@@ -17,7 +17,7 @@ const teachingAlbums = [
   },
   {
     title: '筑梦前陈',
-    description: '把新增文件夹里的照片和视频整理成网页内可直接浏览、可直接播放的媒体内容。',
+    description: '前陈支教的照片和视频已经整理好，在页面里可以直接看、直接播。',
     photos: [
       { src: '/media/teaching/photos/qianchen-1.jpg', alt: '筑梦前陈活动照片 1' },
       { src: '/media/teaching/photos/qianchen-2.jpg', alt: '筑梦前陈活动照片 2' },
@@ -29,7 +29,7 @@ const teachingAlbums = [
   },
   {
     title: '逐梦清溪',
-    description: '新增的支教视频和照片已经接入页面，能更直观看到课程和活动现场。',
+    description: '清溪支教的课程和活动现场，也能通过照片和视频直接看到。',
     photos: [
       { src: '/media/teaching/photos/qingxi-1.jpg', alt: '逐梦清溪活动照片 1' },
       { src: '/media/teaching/photos/qingxi-2.jpg', alt: '逐梦清溪活动照片 2' },
@@ -50,10 +50,10 @@ const GalleryPage: React.FC = () => {
         <div className="page-hero-inner">
           <Camera className="page-hero-icon" />
           <p className="section-kicker text-volunteer-warm">活动纪实</p>
-          <h1 className="page-hero-title page-hero-title-wide">支教照片和视频已经接入网站，活动纪实不再只是文字</h1>
+          <h1 className="page-hero-title page-hero-title-wide">支教照片和视频都在这，活动现场一眼能看到</h1>
           <p className="page-hero-copy">
-            这里新增了飞鸟夏令营、筑梦前陈、逐梦清溪三条支教线的真实照片与视频，
-            页面现在可以直接查看图片和播放视频。
+            飞鸟夏令营、筑梦前陈、逐梦清溪三条线的素材都放进来了，
+            现在可以直接看图、直接播放视频。
           </p>
         </div>
       </section>
@@ -61,9 +61,9 @@ const GalleryPage: React.FC = () => {
       <section className="volunteer-section pt-0">
         <div className="section-heading">
           <p className="section-kicker">支教影像</p>
-          <h2 className="section-title">从文件夹到网页，真实素材已经归档到页面里</h2>
+          <h2 className="section-title">支教素材已整理到页面</h2>
           <p className="section-copy">
-            当前先接入每个支教项目的代表照片和视频，既能体现真实内容，也避免页面一次加载过重。
+            目前每个基地先放代表性照片和视频，既能看清活动内容，也能保证页面加载速度。
           </p>
         </div>
 
@@ -185,7 +185,7 @@ const GalleryPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="section-heading !mb-10">
             <p className="section-kicker text-volunteer-warm">媒体报道与社会回响</p>
-            <h2 className="section-title text-white">主流媒体、地方平台与自有矩阵共同放大三基地的实践价值</h2>
+            <h2 className="section-title text-white">三大支教基地的媒体报道汇总</h2>
             <p className="section-copy text-white/75">这里集中展示飞鸟、前陈、清溪三条线的传播节点，不让报道成果散落在长文里。</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">

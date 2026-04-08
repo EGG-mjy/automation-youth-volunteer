@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import { Link } from 'react-router-dom'
 import { CalendarClock, Layers, MoveRight, SquareStack } from 'lucide-react'
 import { activityColumns, activitySlices } from '../content/siteContent'
@@ -10,9 +10,9 @@ const ActivitiesPage: React.FC = () => {
         <div className="page-hero-inner">
           <Layers className="page-hero-icon" />
           <p className="section-kicker text-volunteer-warm">品牌项目</p>
-          <h1 className="page-hero-title">不是随机活动列表，而是清晰可读的项目矩阵</h1>
+          <h1 className="page-hero-title">活动很多，但看起来不费劲</h1>
           <p className="page-hero-copy">
-            第一层展示长期品牌项目，第二层展示 2025 年具有代表性的年度切片，确保每个栏目都能回到 PDF 原始事实。
+            这页分两部分：先看青协长期在做的项目，再看 2025 年有代表性的活动，脉络一眼就清楚。
           </p>
         </div>
       </section>
@@ -21,7 +21,7 @@ const ActivitiesPage: React.FC = () => {
         <div className="section-heading">
           <p className="section-kicker">第一层</p>
           <h2 className="section-title">八个主栏目，覆盖协会最稳定的服务场景</h2>
-          <p className="section-copy">每张卡片都使用 PDF 原始时间、数据和一句价值概述，不再混用无关的模板信息。</p>
+          <p className="section-copy">每张卡片都写清楚时间、内容和重点，方便你快速了解。</p>
         </div>
         <div className="grid gap-6 lg:grid-cols-2">
           {activityColumns.map((column) => (
@@ -66,8 +66,8 @@ const ActivitiesPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="section-heading">
             <p className="section-kicker">第二层</p>
-            <h2 className="section-title">2025 年活动切片，把品牌项目落到具体场景</h2>
-            <p className="section-copy">年度切片用于展示项目是如何发生的，而不是替代项目本身。</p>
+            <h2 className="section-title">2025 年代表性活动</h2>
+            <p className="section-copy">这里看的是“今年具体做了什么”，和上面的长期项目互相补充。</p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {activitySlices.map((slice) => (
@@ -87,13 +87,13 @@ const ActivitiesPage: React.FC = () => {
         <div className="rounded-[32px] bg-slate-900 p-8 text-white md:p-10">
           <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
             <div>
-              <p className="section-kicker text-volunteer-warm">页面原则</p>
-              <h2 className="mt-2 text-3xl font-bold">让活动页回到“项目长期性”而不是“卡片随机性”</h2>
+              <p className="section-kicker text-volunteer-warm">阅读方式</p>
+              <h2 className="mt-2 text-3xl font-bold">先看长期项目，再看年度重点，信息更清楚</h2>
             </div>
             <CalendarClock className="h-12 w-12 text-volunteer-warm" />
           </div>
           <p className="mt-5 max-w-4xl text-sm leading-8 text-white/80">
-            这里不再放虚构地点、占位时间或泛化描述。用户进入活动页，应该立即看见哪些项目是长期坚持、哪些节点是年度重点、哪些数据可以被事实支撑。
+            我们希望你进入活动页时，能马上看清“长期在做什么、今年重点是什么、每个项目怎么展开”，而不是被零散信息打断阅读。
           </p>
         </div>
       </section>

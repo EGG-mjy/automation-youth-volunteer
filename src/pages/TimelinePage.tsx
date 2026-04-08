@@ -11,7 +11,7 @@ const TimelinePage: React.FC = () => {
           <p className="section-kicker text-volunteer-warm">发展历程</p>
           <h1 className="page-hero-title">从 2002 到 2025，把温暖变成一条看得见的时间线</h1>
           <p className="page-hero-copy">
-            时间线不只记录年份，更记录品牌项目如何形成、服务边界如何扩大，以及一代代青协人怎样把志愿精神传下去。
+            这条时间线不只写年份，也写清楚每个阶段做了什么、怎么一步步走到今天。
           </p>
         </div>
       </section>
@@ -56,8 +56,8 @@ const TimelinePage: React.FC = () => {
       <section className="bg-slate-900 py-16 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="section-heading !mb-10">
-            <p className="section-kicker text-volunteer-warm">品牌成长矩阵</p>
-            <h2 className="section-title text-white">时间线之外，更重要的是服务方向已经形成稳定结构</h2>
+            <p className="section-kicker text-volunteer-warm">服务版图</p>
+            <h2 className="section-title text-white">除了时间线，你还能看到青协长期在做的几条服务线</h2>
           </div>
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
             {serviceMatrix.map((item, index) => {
