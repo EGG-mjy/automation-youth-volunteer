@@ -1,6 +1,6 @@
 import React from 'react'
 import { BookOpen, Building2, GraduationCap, Medal, Users2 } from 'lucide-react'
-import { associationMeta, departments, honors, teacherMoments } from '../content/siteContent'
+import { associationFacts, associationMeta, departments, honors, majorDeeds, teacherMoments } from '../content/siteContent'
 
 const AboutPage: React.FC = () => {
   return (
@@ -25,16 +25,16 @@ const AboutPage: React.FC = () => {
             </div>
             <div className="mt-5 space-y-4 text-sm leading-8 text-slate-600">
               <p>
-                自动化青协成立于 2002 年，是学院中持续运行至今的青年志愿服务组织。协会围绕助残关怀、病房陪伴、
-                赛事保障、乡村支教与校园公益展开长期服务，以真实合作关系和稳定项目机制支撑品牌建设。
+                自动化青协成立于 2002 年，是学院中持续运行至今的青年志愿服务组织。协会现有 63 名成员，由姜智敏、
+                姜博恩老师担任指导老师，下设办公室、组织部、新媒体部、项目拓展中心、基地拓展中心、志愿者管理中心六个部门。
               </p>
               <p>
-                二十三载走来，从最初的微光汇聚到如今的品牌矩阵，青协人把青春的力量融入每一次服务，把温暖的种子
-                播撒在每一个需要我们的角落。无论是在病房、社区、赛场、湖畔还是乡村课堂，志愿精神都以更具体的形式持续发生。
+                自成立以来，协会始终坚持“奉献、友爱、互助、进步”的准则，以“{associationMeta.mission}”为宗旨积极开展各类志愿活动。
+                截至 2025 年，协会注册志愿者人数已达 5103 人，累计志愿服务时长超过 80024.7 小时。
               </p>
               <p>
-                2025 年，协会围绕“灵动翼行”“护佑童心”“智能汽车竞赛志愿”“暑期支教”等核心品牌持续发力，并通过
-                西湖益行、东湖养老、海洋天堂、心灵驿站、百团招新等节点把年度叙事推向更完整的公众表达。
+                二十三载走来，青协人在一次次基地服务、赛会保障、支教实践和校园公益中锻炼自我、成长进步，也把志愿服务沉淀成学院里
+                最稳定、最可辨识的长期品牌之一。
               </p>
             </div>
           </article>
@@ -62,6 +62,25 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="section-heading">
+            <p className="section-kicker">主要事迹</p>
+            <h2 className="section-title">把二十余年的长期服务，拆成可以被理解的事实结构</h2>
+            <p className="section-copy">这里不再只讲抽象精神，而是把组织规模、主要项目和年度成果落到可核对的事实上。</p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {associationFacts.map((fact) => (
+              <article key={fact.label} className="volunteer-card p-6">
+                <p className="text-sm font-semibold tracking-[0.18em] text-volunteer-primary/80">{fact.label}</p>
+                <p className="mt-3 text-3xl font-bold text-slate-900">{fact.value}</p>
+                <p className="mt-3 text-sm leading-7 text-slate-600">{fact.detail}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="bg-slate-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="section-heading">
@@ -81,6 +100,30 @@ const AboutPage: React.FC = () => {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="volunteer-section">
+        <div className="section-heading">
+          <p className="section-kicker">年度重点面向</p>
+          <h2 className="section-title">常规活动、支教、赛会与传播，共同构成 2025 年的完整面貌</h2>
+          <p className="section-copy">你给出的“主要事迹”并不只是长文材料，更适合拆成几个稳定板块来展示组织能力的广度。</p>
+        </div>
+        <div className="grid gap-6 lg:grid-cols-2">
+          {majorDeeds.map((deed) => (
+            <article key={deed.title} className="volunteer-card p-7">
+              <h3 className="text-2xl font-bold text-slate-900">{deed.title}</h3>
+              <p className="mt-4 text-sm leading-8 text-slate-600">{deed.summary}</p>
+              <ul className="mt-5 space-y-3 text-sm text-slate-600">
+                {deed.bullets.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <Users2 className="mt-0.5 h-4 w-4 shrink-0 text-volunteer-secondary" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
         </div>
       </section>
 

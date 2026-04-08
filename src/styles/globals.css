@@ -61,6 +61,13 @@
 
   .page-hero-title {
     @apply text-4xl md:text-5xl font-bold leading-tight text-white;
+    max-width: 18ch;
+    margin-inline: auto;
+    text-wrap: balance;
+  }
+
+  .page-hero-title-wide {
+    max-width: 22ch;
   }
 
   .page-hero-copy {

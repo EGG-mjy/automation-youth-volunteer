@@ -20,7 +20,7 @@ const ActivitiesPage: React.FC = () => {
       <section className="volunteer-section">
         <div className="section-heading">
           <p className="section-kicker">第一层</p>
-          <h2 className="section-title">六个主栏目，覆盖协会最稳定的服务场景</h2>
+          <h2 className="section-title">八个主栏目，覆盖协会最稳定的服务场景</h2>
           <p className="section-copy">每张卡片都使用 PDF 原始时间、数据和一句价值概述，不再混用无关的模板信息。</p>
         </div>
         <div className="grid gap-6 lg:grid-cols-2">

@@ -143,23 +143,23 @@ const HomePage: React.FC = () => {
           <p className="section-copy">{associationMeta.description}</p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="volunteer-card p-6">
-            <h3 className="text-xl font-bold text-slate-900">传承时间</h3>
-            <p className="mt-3 text-4xl font-bold text-volunteer-primary">{associationMeta.anniversaryLabel}</p>
-            <p className="mt-3 text-sm leading-7 text-slate-600">从 2002 年到 2025 年，组织叙事以真实年份和真实节点建立可信度。</p>
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="volunteer-card p-6">
+              <h3 className="text-xl font-bold text-slate-900">传承时间</h3>
+              <p className="mt-3 text-4xl font-bold text-volunteer-primary">{associationMeta.anniversaryLabel}</p>
+              <p className="mt-3 text-sm leading-7 text-slate-600">从 2002 年到 2025 年，组织叙事以真实年份和真实节点建立可信度。</p>
+            </div>
+            <div className="volunteer-card p-6">
+              <h3 className="text-xl font-bold text-slate-900">服务矩阵</h3>
+              <p className="mt-3 text-4xl font-bold text-volunteer-primary">多场景长期服务</p>
+              <p className="mt-3 text-sm leading-7 text-slate-600">社区、慧灵、病房、乡村、书吧、赛会与校园公共空间共同构成年度行动地图。</p>
+            </div>
+            <div className="volunteer-card p-6">
+              <h3 className="text-xl font-bold text-slate-900">组织入口</h3>
+              <p className="mt-3 text-4xl font-bold text-volunteer-primary">6 个部门</p>
+              <p className="mt-3 text-sm leading-7 text-slate-600">63 名成员在策划、传播、调度与基地联动中协同推进，让成员在真实项目里完成成长。</p>
+            </div>
           </div>
-          <div className="volunteer-card p-6">
-            <h3 className="text-xl font-bold text-slate-900">服务矩阵</h3>
-            <p className="mt-3 text-4xl font-bold text-volunteer-primary">5 大方向</p>
-            <p className="mt-3 text-sm leading-7 text-slate-600">助残、病房、赛事、支教、校园服务共同构成年度行动地图。</p>
-          </div>
-          <div className="volunteer-card p-6">
-            <h3 className="text-xl font-bold text-slate-900">组织入口</h3>
-            <p className="mt-3 text-4xl font-bold text-volunteer-primary">6 个部门</p>
-            <p className="mt-3 text-sm leading-7 text-slate-600">从策划、传播、调度到基地联动，让成员在真实项目里完成成长。</p>
-          </div>
-        </div>
       </section>
     </div>
   )
