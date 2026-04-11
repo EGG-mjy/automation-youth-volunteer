@@ -50,10 +50,9 @@ const GalleryPage: React.FC = () => {
         <div className="page-hero-inner">
           <Camera className="page-hero-icon" />
           <p className="section-kicker text-volunteer-warm">活动纪实</p>
-          <h1 className="page-hero-title page-hero-title-wide">支教照片和视频都在这，活动现场一眼能看到</h1>
+          <h1 className="page-hero-title">活动纪实</h1>
           <p className="page-hero-copy">
-            飞鸟夏令营、筑梦前陈、逐梦清溪三条线的素材都放进来了，
-            现在可以直接看图、直接播放视频。
+            支教照片和视频都在这，活动现场一眼能看到。
           </p>
         </div>
       </section>

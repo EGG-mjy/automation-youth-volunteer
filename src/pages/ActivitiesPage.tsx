@@ -10,9 +10,9 @@ const ActivitiesPage: React.FC = () => {
         <div className="page-hero-inner">
           <Layers className="page-hero-icon" />
           <p className="section-kicker text-volunteer-warm">品牌项目</p>
-          <h1 className="page-hero-title">活动很多，但看起来不费劲</h1>
+          <h1 className="page-hero-title">品牌项目</h1>
           <p className="page-hero-copy">
-            这页分两部分：先看青协长期在做的项目，再看 2025 年有代表性的活动，脉络一眼就清楚。
+            从青协长期在做的项目，到 2025 年有代表性的活动，脉络一眼就清楚。
           </p>
         </div>
       </section>

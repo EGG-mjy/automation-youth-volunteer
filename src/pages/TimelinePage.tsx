@@ -9,9 +9,9 @@ const TimelinePage: React.FC = () => {
         <div className="page-hero-inner">
           <TimerReset className="page-hero-icon" />
           <p className="section-kicker text-volunteer-warm">发展历程</p>
-          <h1 className="page-hero-title">从 2002 到 2025，把温暖变成一条看得见的时间线</h1>
+          <h1 className="page-hero-title">发展历程</h1>
           <p className="page-hero-copy">
-            这条时间线不只写年份，也写清楚每个阶段做了什么、怎么一步步走到今天。
+            从 2002 到 2025，把温暖变成一条看得见的时间线。
           </p>
         </div>
       </section>

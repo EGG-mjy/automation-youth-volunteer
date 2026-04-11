@@ -7,6 +7,7 @@ const HomePage: React.FC = () => {
   const featuredProjects = signatureProjects.slice(0, 4)
   const xihuStory = extendedStories[0]
   const iconMap = [HeartHandshake, Heart, Trophy, Users]
+  const heroTitleParts = associationMeta.heroTitle.split('，')
 
   return (
     <div className="min-h-screen text-slate-800">
@@ -19,7 +20,13 @@ const HomePage: React.FC = () => {
               <span>{associationMeta.establishedYear} - {associationMeta.currentYear} · {associationMeta.anniversaryLabel}</span>
             </div>
             <h1 className="mt-6 text-4xl font-bold leading-tight text-slate-900 md:text-6xl">
-              {associationMeta.heroTitle}
+              {heroTitleParts[0]}
+              {heroTitleParts[1] ? (
+                <>
+                  <br />
+                  {heroTitleParts[1]}
+                </>
+              ) : null}
             </h1>
             <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl">
               {associationMeta.fullName}，以“{associationMeta.mission}”为宗旨，{associationMeta.heroSubtitle}
@@ -104,7 +111,7 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      <section className="bg-slate-900 py-16 text-white">
+      <section className="home-highlight-section bg-slate-900 py-16 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <p className="section-kicker text-volunteer-warm">年度重点行动</p>

@@ -9,7 +9,7 @@ const InternalEventsPage: React.FC = () => {
         <div className="page-hero-inner">
           <CalendarDays className="page-hero-icon" />
           <p className="section-kicker text-volunteer-warm">内部活动</p>
-          <h1 className="page-hero-title">自动化青协内部活动纪要</h1>
+          <h1 className="page-hero-title">内部活动</h1>
           <p className="page-hero-copy">
             聚焦协会内部治理、换届传承与文化建设，记录每次全体大会与关键组织节点。
           </p>
