@@ -1,6 +1,6 @@
 ﻿import React from 'react'
 import { Link } from 'react-router-dom'
-import { CalendarClock, Layers, MoveRight, SquareStack } from 'lucide-react'
+import { Layers, MoveRight, SquareStack } from 'lucide-react'
 import { activityColumns, activitySlices } from '../content/siteContent'
 
 const ActivitiesPage: React.FC = () => {
@@ -83,20 +83,6 @@ const ActivitiesPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="volunteer-section">
-        <div className="rounded-[32px] bg-slate-900 p-8 text-white md:p-10">
-          <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
-            <div>
-              <p className="section-kicker text-volunteer-warm">阅读方式</p>
-              <h2 className="mt-2 text-3xl font-bold">先看长期项目，再看年度重点，信息更清楚</h2>
-            </div>
-            <CalendarClock className="h-12 w-12 text-volunteer-warm" />
-          </div>
-          <p className="mt-5 max-w-4xl text-sm leading-8 text-white/80">
-            我们希望你进入活动页时，能马上看清“长期在做什么、今年重点是什么、每个项目怎么展开”，而不是被零散信息打断阅读。
-          </p>
-        </div>
-      </section>
     </div>
   )
 }
